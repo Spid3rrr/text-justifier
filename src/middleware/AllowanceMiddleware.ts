@@ -6,8 +6,8 @@ const verifyAllowance = (
   res: Response,
   next: NextFunction
 ): void => {
-  const user: User = req.user;
-  const token = req.token;
+  const user: User = (req as any).user;
+  const token = (req as any).token;
   if (!user) {
     res.status(401).json({ error: "Unauthorized" });
     return;

@@ -25,3 +25,8 @@ J'ai supposé que :
 
 - Les utilisateurs ont le droit de générer plusieurs tokens avec la même adresse email.
 - La limite quotidienne de 80 000 mots est fixe. Sinon, on peut l'ajouter comme variable d'environnement (et de même pour la longueur de chaque ligne).
+
+## Limitations
+
+- Les tests effectués sont des tests d'intégration, pas des tests unitaires. J'ai préféré me concentrer sur la fonctionnalité principale.
+- Il y'a plusieurs constantes dans le code qui devraient être des variables d'environnement.

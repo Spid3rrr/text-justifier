@@ -12,6 +12,8 @@ app.get("/healthcheck", (req: Request, res: Response) => {
 
 app.use("/api", router);
 
-app.listen(port, () => {
+const instance = app.listen(port, () => {
   console.log(`Server is running at http://localhost:${port}`);
 });
+
+export default instance;
